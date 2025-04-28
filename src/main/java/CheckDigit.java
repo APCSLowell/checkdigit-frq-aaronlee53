@@ -1,4 +1,4 @@
-public class CheckDigit 
+;?public class CheckDigit 
 {   
   /** Returns the check digit for num, as described in part (a).  
    *  Precondition: The number of digits in num is between one and    
@@ -16,6 +16,7 @@ public class CheckDigit
    *  is between two and seven, inclusive.
    *                numWithCheckDigit >= 0     
    */     
+  a
    public static boolean isValid(int numWithCheckDigit)    
    {      
      /* to be implemented in part (b) */    
