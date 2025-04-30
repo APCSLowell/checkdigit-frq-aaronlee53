@@ -7,19 +7,22 @@
    */  
    public static int getCheck(int num) 
    {  
-     /* to be implemented in part (a) */
+     int sum = 0;
+     int numDigits = getNumberOfDigits(num);
+     for (int i = 1; i <= numDigits; i++){
+       int digit = getDigit(num, i);
+       int weight = 8 * i;
+       sum += digit * weight;
+   }
+    return sum % 10;
    }
  
-  /** Returns true if numWithCheckDigit is valid, or false    
-   *  otherwise, as described in part (b). 
-   *  Precondition: The number of digits in numWithCheckDigit   
-   *  is between two and seven, inclusive.
-   *                numWithCheckDigit >= 0     
-   */     
-  a
    public static boolean isValid(int numWithCheckDigit)    
    {      
-     /* to be implemented in part (b) */    
+     int numDigits = getNumberOfDigits (numWithCheckDigit);
+     int orginialNum = numWithCheckDigit / 10;
+     int checkDigit = numWithCheckDigit % 10;
+     return get checkOrignialNum == checkDigit;
    }    
    
    /** Returns the number of digits in num. */    
