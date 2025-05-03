@@ -11,7 +11,7 @@
      int numDigits = getNumberOfDigits(num);
      for (int i = 1; i <= numDigits; i++){
        int digit = getDigit(num, i);
-       int weight = 8 * i;
+       int weight = 8 - i;
        sum += digit * weight;
    }
     return sum % 10;
@@ -19,10 +19,10 @@
  
    public static boolean isValid(int numWithCheckDigit)    
    {      
-     int numDigits = getNumberOfDigits (numWithCheckDigit);
-     int orginialNum = numWithCheckDigit / 10;
+ 
+     int originalNum = numWithCheckDigit / 10;
      int checkDigit = numWithCheckDigit % 10;
-     return get checkOrignialNum == checkDigit;
+     return getCheck(originalNum) == checkDigit;
    }    
    
    /** Returns the number of digits in num. */    
